@@ -19,13 +19,15 @@ from dataclasses import dataclass
 PURE_GOLD_DENSITY = 19.30  # g/cm^3
 
 # Impurity densities (g/cm^3) for each metal classification visible in the UI.
-# Calibrated from screenshot #7 outputs at air=11.664, water=11.000.
+# Reverse-calibrated from screenshot #7 (air=11.664, water=11.000) so that the
+# pure-gold-grams column matches: Local=10.7037, Copper=10.6614, Standard=10.6265,
+# Silver=10.3690, Pure Silver=10.3399.
 METALS = {
-    "Local":      8.40,
-    "Copper":     8.96,
-    "Standard":   8.65,
-    "Silver":    10.49,
-    "Pure Silver": 10.50,
+    "Local":      8.76,
+    "Copper":     8.98,
+    "Standard":   9.14,
+    "Silver":    10.21,
+    "Pure Silver": 10.32,
 }
 
 
