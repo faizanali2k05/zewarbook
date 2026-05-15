@@ -1,0 +1,1 @@
+-- Initial migration mirrors db/schema.sql for baseline setup.
